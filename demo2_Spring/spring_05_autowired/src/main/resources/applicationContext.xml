@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/aop
+       https://www.springframework.org/schema/aop/spring-aop.xsd">
+
+<!--    <bean id="cat" class="com.laj.pojo.Cat"/>-->
+<!--    <bean id="dog" class="com.laj.pojo.Dog"/>-->
+<!--    <bean id="person" class="com.laj.pojo.Person" p:name="alen" p:cat-ref="cat" p:dog-ref="dog"/>-->
+<!--    自动装配（autowired）：在class中寻找有没有set后面的值（区分大小写），然后在上下文中寻找，有就自动装配-->
+<!--    <bean id="person" class="com.laj.pojo.Person" p:name="alen" autowire="byName"/>-->
+<!--    byname的时候，需要保证所有bean的id唯一，并且这个bean需要和自动注入的属性的set方法的值一致。-->
+<!--    bytype的时候，需要保证所有bean的属性(type)唯一，并且这个bean需要和自动注入的属性的类型的值一致。-->
+
+<!--    使用注解开发：开启注解的支持
+            开启@Autowired 可以不用编写Set方法了，前提是装配的属性在IOC容器中存在，且符合名字byname-->
+    <context:annotation-config/>
+    <bean id="cat" class="com.laj.pojo.Cat"/>
+    <bean id="dog" class="com.laj.pojo.Dog"/>
+    <bean id="person" class="com.laj.pojo.Person"/>
+</beans>

@@ -1,0 +1,7 @@
+package com.laj.controller;
+
+import org.springframework.stereotype.Controller;
+
+@Controller
+public class UserController {
+}

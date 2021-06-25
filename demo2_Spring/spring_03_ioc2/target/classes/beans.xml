@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans-3.2.xsd">
+    <!-- 由 Spring容器创建该类的实例对象 -->
+<!--    <bean id="user" class="com.laj.pojo.User" >-->
+<!--        <property name="name" value="coco"></property>-->
+
+<!--        第一种：通过下标赋值-->
+<!--        <constructor-arg index="0" value="通过下标赋值"></constructor-arg>-->
+
+<!--        第二种：通过type赋值，不建议。-->
+<!--        <constructor-arg type="java.lang.String" value="通过type赋值"></constructor-arg>-->
+
+<!--        第三种：直接通过参数名来设置-->
+<!--        <constructor-arg name="name" value="通过参数名来赋值"/>-->
+
+<!--    </bean>-->
+<!--        在注册bean的时候就已经实例化了-->
+        <bean id="userT" class="com.laj.pojo.UserT"></bean>
+
+<!--    别名： 两种方式都可创建别名，name的优先级更高且可以同时取多个别名，用逗号隔开-->
+    <bean id="user" class="com.laj.pojo.User" name="user1,userOne">
+        <constructor-arg index="0" value="123123123"/>
+        
+    </bean>
+    <alias name="user" alias="user1"/>
+</beans>
