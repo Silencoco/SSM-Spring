@@ -10,6 +10,7 @@
         <module name="spring_01_ioc" />
         <module name="spring_09_aop_guigu" />
         <module name="spring_06_anno" />
+        <module name="Practice" />
         <module name="spring_02_hellospring" />
         <module name="spring_09_aop" />
         <module name="spring_07_appconfig" />

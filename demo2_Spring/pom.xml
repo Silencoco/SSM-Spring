@@ -19,6 +19,7 @@
         <module>spring_08_proxy</module>
         <module>spring_09_aop</module>
         <module>spring_09_aop_guigu</module>
+        <module>Practice</module>
     </modules>
 
     <properties>
